@@ -36,6 +36,27 @@ body {
     padding-bottom: 60px;
 }
 
+.andyscode-content::after {
+    content: "";
+    position: absolute;
+    z-index: 30;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    height: 70px;
+    background:
+        radial-gradient(ellipse at 8% 0%, #8b0000 0 18px, transparent 19px),
+        radial-gradient(ellipse at 20% 0%, #b00000 0 12px, transparent 13px),
+        radial-gradient(ellipse at 32% 0%, #700000 0 22px, transparent 23px),
+        radial-gradient(ellipse at 45% 0%, #a00000 0 14px, transparent 15px),
+        radial-gradient(ellipse at 58% 0%, #c00000 0 25px, transparent 26px),
+        radial-gradient(ellipse at 72% 0%, #800000 0 15px, transparent 16px),
+        radial-gradient(ellipse at 85% 0%, #a00000 0 20px, transparent 21px),
+        linear-gradient(to bottom, #700000 0 18px, transparent 18px);
+    pointer-events: none;
+}
+
 .andyscode-content::before {
     content: "";
     position: absolute;
