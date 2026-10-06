@@ -36,6 +36,26 @@ body {
     padding-bottom: 60px;
 }
 
+.andyscode::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    height: calc(100% - 500px);
+    background: #120000;
+    clip-path: polygon(
+        50% 0,
+        100% 10%,
+        100% 100%,
+        0 100%,
+        0 10%
+    );
+}
+
+/* BLOOD DRIPS */
 .andyscode-content::after {
     content: "";
     position: absolute;
@@ -57,27 +77,6 @@ body {
     pointer-events: none;
 }
 
-.andyscode-content::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 550px;
-    height: calc(100% - 500px);
-    background: #120000;
-    border: 4px solid transparent;
-    border-radius: 50px;
-    clip-path: polygon(
-    50% 0,
-    100% 10%,
-    100% 100%,
-    0 100%,
-    0 10%
-);
-}
-    
 /* IMAGE */
 .andyscode-image {
     position: relative;
@@ -85,34 +84,21 @@ body {
     width: 479px;
     height: 700px;
     margin: 0 auto;
-    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
+    background-image:
+        linear-gradient(
+            rgba(255,0,0,.5),
+            rgba(255,0,0,.5)
+        ),
+        url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background:
-        radial-gradient(
-            circle,
-            rgba(255,0,0,.5),
-            transparent 65%
-        );
 }
 
-/* MULTIPLE BLOOD DRIPS */
-.drip {
-    position: absolute;
-    top: 0;
-    width: 30px;
-    height: 70px;
-    background: linear-gradient(
-        to bottom,
-        #a00000,
-        #4a0000
-    );
-}
-    
 /* TEXT BOX */
 .andyscode-text {
     position: relative;
+    z-index: 5;
     width: 550px;
     min-height: 350px;
     margin: 0 auto;
@@ -138,14 +124,14 @@ body {
         transparent 100%
     );
 }
-    
+
 /* BODY TEXT */
 .andyscode-body {
     position: relative;
     z-index: 5;
     width: 500px;
     margin: 0 auto;
-    padding: 75px 0px 0px 0px;
+    padding: 75px 0 0 0;
     text-align: justify;
     color: #fafabb;
     font-size: 13px;
@@ -170,11 +156,11 @@ body {
     line-height: 1;
     background: linear-gradient(
         to right,
-        #5a0000,
+        #6b0000,
+        #ff3b3b,
         #a00000,
-        #d4af37,
-        #ffd966,
-        #d4af37
+        #ff6666,
+        #6b0000
     );
     -webkit-background-clip: text;
     background-clip: text;
@@ -190,7 +176,7 @@ body {
     margin: 20px auto 0 auto;
     text-align: center;
     font-size: 15px;
-    font-family: "Aboreto",serif;
+    font-family: "Aboreto", serif;
     font-style: bold;
     color: #ffb037;
     line-height: 1.2;
