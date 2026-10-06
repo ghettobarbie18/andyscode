@@ -11,7 +11,7 @@ body {
 
 body {
     font-family: Georgia, serif;
-    color: transparent;
+    color: #1f2a34;
 }
 
 .andyscode-content {
@@ -19,18 +19,6 @@ body {
     width: 700px;
     margin: 40px auto;
     padding-bottom: 60px;
-}
-
-.andyscode::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 550px;
-    height: calc(100% - 500px);
-    background: #120000;
     clip-path: polygon(
         50% 0,
         100% 10%,
