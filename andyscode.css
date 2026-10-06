@@ -21,6 +21,26 @@ body {
     padding-bottom: 60px;
 }
 
+.andyscode::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 500px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    height: calc(100% - 500px);
+    background: #120000;
+    clip-path: polygon(
+        50% 0,
+        100% 10%,
+        100% 100%,
+        0 100%,
+        0 10%
+    );
+}
+
+/* BLOOD DRIPS */
 .andyscode-content::after {
     content: "";
     position: absolute;
@@ -42,25 +62,6 @@ body {
     pointer-events: none;
 }
 
-.andyscode::before {
-    content: "";
-    position: absolute;
-    z-index: 0;
-    top: 500px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 550px;
-    height: calc(100% - 500px);
-    background: #120000;
-    clip-path: polygon(
-    50% 0,
-    100% 10%,
-    100% 100%,
-    0 100%,
-    0 10%
-);
-}
-
 /* IMAGE */
 .andyscode-image {
     position: relative;
@@ -68,21 +69,21 @@ body {
     width: 479px;
     height: 700px;
     margin: 0 auto;
-    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
+    background-image:
+        linear-gradient(
+            rgba(255,0,0,.5),
+            rgba(255,0,0,.5)
+        ),
+        url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background:
-        radial-gradient(
-            circle,
-            rgba(255,0,0,.5),
-            transparent 65%
-        );
 }
 
 /* TEXT BOX */
 .andyscode-text {
     position: relative;
+    z-index: 5;
     width: 550px;
     min-height: 350px;
     margin: 0 auto;
@@ -115,7 +116,7 @@ body {
     z-index: 5;
     width: 500px;
     margin: 0 auto;
-    padding: 75px 0px 0px 0px;
+    padding: 75px 0 0 0;
     text-align: justify;
     color: #fafabb;
     font-size: 13px;
@@ -138,7 +139,14 @@ body {
     letter-spacing: 4px;
     font-family: "Explora", cursive;
     line-height: 1;
-    background: linear-gradient(to right,#6b0000,#ff3b3b,#a00000,#ff6666,#6b0000);
+    background: linear-gradient(
+        to right,
+        #6b0000,
+        #ff3b3b,
+        #a00000,
+        #ff6666,
+        #6b0000
+    );
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -153,7 +161,7 @@ body {
     margin: 20px auto 0 auto;
     text-align: center;
     font-size: 15px;
-    font-family: "Aboreto",serif;
+    font-family: "Aboreto", serif;
     font-style: bold;
     color: #ffb037;
     line-height: 1.2;
