@@ -68,8 +68,27 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background:
+        radial-gradient(
+            circle,
+            rgba(255,0,0,.5),
+            transparent 65%
+        );
 }
 
+/* MULTIPLE BLOOD DRIPS */
+.drip {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 70px;
+    background: linear-gradient(
+        to bottom,
+        #a00000,
+        #4a0000
+    );
+}
+    
 /* TEXT BOX */
 .andyscode-text {
     position: relative;
