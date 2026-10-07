@@ -47,7 +47,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 550px;
-    background: #410001;
+    background: linear-gradient(
+        120deg,
+        #190000,
+        #700000,
+        #190000
+    );
+    background-size: 200% 200%;
+    animation: gradientMove 8s ease infinite;
     clip-path: polygon(
         50% 0,
         100% 10%,
@@ -55,9 +62,20 @@ body {
         0 100%,
         0 10%
     );
-    box-shadow:
-        0 3px 8px rgba(0,0,0,.7),
-        0 0 6px #000000;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* BLOOD DRIPS AT VERY BOTTOM */
@@ -185,9 +203,10 @@ body {
 .andyscode-body {
     position: relative;
     z-index: 5;
+    top: -100px;
     width: 500px;
     margin: 0 auto;
-    padding: 10px 0 0 0;
+    padding: 10px 10px 10px 10px;
     text-align: justify;
     color: white;
     font-size: 13px;
@@ -204,7 +223,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 3px;
+    padding: 2px;
     background: linear-gradient(
         135deg,
         #ff0000,
