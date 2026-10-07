@@ -19,6 +19,19 @@ body {
     width: 700px;
     margin: 40px auto;
     padding-bottom: 60px;
+}
+
+/* ENTIRE BACKGROUND */
+.andyscode-content::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 550px;
+    background: #120000;
     clip-path: polygon(
         50% 0,
         100% 10%,
@@ -28,7 +41,7 @@ body {
     );
 }
 
-/* BLOOD DRIPS */
+/* BLOOD DRIPS AT VERY BOTTOM */
 .andyscode-content::after {
     content: "";
     position: absolute;
@@ -37,16 +50,18 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 550px;
-    height: 70px;
+    height: 75px;
     background:
-        radial-gradient(ellipse at 8% 0%, #8b0000 0 18px, transparent 19px),
-        radial-gradient(ellipse at 20% 0%, #b00000 0 12px, transparent 13px),
-        radial-gradient(ellipse at 32% 0%, #700000 0 22px, transparent 23px),
-        radial-gradient(ellipse at 45% 0%, #a00000 0 14px, transparent 15px),
-        radial-gradient(ellipse at 58% 0%, #c00000 0 25px, transparent 26px),
-        radial-gradient(ellipse at 72% 0%, #800000 0 15px, transparent 16px),
-        radial-gradient(ellipse at 85% 0%, #a00000 0 20px, transparent 21px),
-        linear-gradient(to bottom, #700000 0 18px, transparent 18px);
+        radial-gradient(ellipse at 5% 0%, #8b0000 0 14px, transparent 15px),
+        radial-gradient(ellipse at 13% 0%, #b00000 0 20px, transparent 21px),
+        radial-gradient(ellipse at 24% 0%, #700000 0 11px, transparent 12px),
+        radial-gradient(ellipse at 34% 0%, #a00000 0 24px, transparent 25px),
+        radial-gradient(ellipse at 46% 0%, #8b0000 0 14px, transparent 15px),
+        radial-gradient(ellipse at 57% 0%, #c00000 0 28px, transparent 29px),
+        radial-gradient(ellipse at 68% 0%, #700000 0 12px, transparent 13px),
+        radial-gradient(ellipse at 78% 0%, #a00000 0 22px, transparent 23px),
+        radial-gradient(ellipse at 90% 0%, #8b0000 0 17px, transparent 18px),
+        linear-gradient(to bottom, #700000 0 20px, transparent 20px);
     pointer-events: none;
 }
 
@@ -57,7 +72,12 @@ body {
     width: 479px;
     height: 700px;
     margin: 0 auto;
-    background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
+    background-image:
+        linear-gradient(
+            rgba(255,0,0,.15),
+            rgba(255,0,0,.15)
+        ),
+        url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,6 +96,7 @@ body {
     background: transparent;
 }
 
+/* TEXT BOX BOTTOM LINE */
 .andyscode-text::after {
     content: "";
     position: absolute;
