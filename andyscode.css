@@ -20,6 +20,8 @@ body {
     margin: 40px auto;
     top: 80px;
     padding-bottom: 60px;
+    filter: drop-shadow(0 0 8px #8b0000)
+        drop-shadow(0 0 20px rgba(255,0,0,.5));
 }
 
 /* ENTIRE BACKGROUND */
