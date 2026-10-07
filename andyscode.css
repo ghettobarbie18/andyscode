@@ -51,9 +51,7 @@ body {
     background: linear-gradient(
         to bottom,
         #190000,
-        #700000,
-        #410001,
-        #190000
+        #410001
     );
     clip-path: polygon(
         50% 0,
