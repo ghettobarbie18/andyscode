@@ -18,6 +18,7 @@ body {
     position: relative;
     width: 700px;
     margin: 40px auto;
+    top: 80px;
     padding-bottom: 60px;
 }
 
@@ -72,6 +73,7 @@ body {
     width: 479px;
     height: 700px;
     margin: 0 auto;
+    top: -100px;
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
     background-position: center;
