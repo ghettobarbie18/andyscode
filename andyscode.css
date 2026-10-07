@@ -49,7 +49,7 @@ body {
     top: calc(100% - 60px);
     background: linear-gradient(
         to bottom,
-        #a30000,
+        #120000,
         #4d0000
     );
     border-radius: 0 0 50% 50%;
