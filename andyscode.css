@@ -17,7 +17,7 @@ body {
 .andyscode-content {
     position: relative;
     width: 700px;
-    margin: 340px auto 100px;
+    margin: 500px auto 100px;
     padding-bottom: 60px;
     animation: pulse 3s infinite;
 }
@@ -60,7 +60,7 @@ body {
 .drip {
     position: absolute;
     z-index: 30;
-    top: calc(100% - 60px);
+    bottom: 60px;
     background: linear-gradient(to bottom, #410001, #f10000);
     border-radius: 0 0 50% 50%;
     box-shadow: none;
