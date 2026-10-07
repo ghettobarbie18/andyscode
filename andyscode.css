@@ -204,8 +204,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    padding: 2px;
-    border-radius: 25px;
+    padding: 3px;
     background: linear-gradient(
         135deg,
         #ff0000,
