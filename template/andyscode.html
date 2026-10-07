@@ -162,13 +162,11 @@ body {
 
 /* IMAGE */
 .andyscode-image {
-    position: absolute;
+    position: relative;
     z-index: 10;
-    top: -260px;
-    left: 50%;
-    transform: translateX(-50%);
     width: 479px;
     height: 700px;
+    margin: -500px auto 0;
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
     background-position: center;
@@ -183,24 +181,22 @@ body {
         drop-shadow(0 0 30px rgba(255,0,0,.7));
 }
 
-/* TEXT BOX */
 .andyscode-text {
     position: relative;
     z-index: 5;
     width: 550px;
     min-height: 500px;
     margin: 0 auto;
-    margin-top: 0;
+    margin-top: -200px;
     padding: 30px;
     text-align: justify;
     background: transparent;
 }
 
-/* BODY TEXT */
 .andyscode-body {
     position: relative;
     z-index: 5;
-    top: 0;
+    top: -100px;
     width: 500px;
     margin: 0 auto;
     padding: 10px;
@@ -209,6 +205,7 @@ body {
     font-size: 13px;
     font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
+    font-style: normal;
     line-height: 1.6;
     background: #0d0712;
     overflow-x: hidden;
@@ -307,6 +304,7 @@ body {
     -webkit-text-fill-color: transparent;
     color: transparent;
 }
+
 </style>
 
 </head>
