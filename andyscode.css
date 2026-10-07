@@ -17,7 +17,7 @@ body {
 .andyscode-content {
     position: relative;
     width: 700px;
-    margin: 100px auto 100px;
+    margin: 600px auto 100px;
     padding-bottom: 60px;
     animation: pulse 3s infinite;
 }
