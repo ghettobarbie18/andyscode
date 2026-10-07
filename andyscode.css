@@ -54,15 +54,9 @@ body {
     position: absolute;
     z-index: 30;
     top: calc(100% - 60px);
-    background: linear-gradient(
-        to bottom,
-        #120000,
-        #4d0000
-    );
+    background: linear-gradient(to bottom, #a30000, #4d0000);
     border-radius: 0 0 50% 50%;
-    box-shadow:
-        0 3px 8px rgba(0,0,0,.7),
-        0 0 6px #8b0000;
+    box-shadow: none;
 }
 
 /* DRIP POSITIONS */
