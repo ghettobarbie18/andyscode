@@ -17,6 +17,7 @@ body {
 .andyscode-content {
     position: relative;
     width: 700px;
+    min-height: 550px;
     margin: 40px auto;
     top: 300px;
     padding-bottom: 60px;
@@ -48,12 +49,12 @@ body {
     transform: translateX(-50%);
     width: 550px;
     background: linear-gradient(
-        120deg,
+        180deg,
         #190000,
         #700000,
         #190000
     );
-    background-size: 200% 200%;
+    background-size: 100% 200%;
     animation: gradientMove 8s ease infinite;
     clip-path: polygon(
         50% 0,
@@ -66,15 +67,15 @@ body {
 
 @keyframes gradientMove {
     0% {
-        background-position: 0% 50%;
+        background-position: 50% 0%;
     }
 
     50% {
-        background-position: 100% 50%;
+        background-position: 50% 100%;
     }
 
     100% {
-        background-position: 0% 50%;
+        background-position: 50% 0%;
     }
 }
 
@@ -191,7 +192,7 @@ body {
     position: relative;
     z-index: 5;
     width: 550px;
-    min-height: 350px;
+    min-height: 450px;
     margin: 0 auto;
     margin-top: -200px;
     padding: 30px;
