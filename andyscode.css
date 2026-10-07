@@ -136,10 +136,13 @@ body {
 
 /* QUOTE */
 .andyscode-quote {
-    position: relative;
-    z-index: 10;
+    position: absolute;
+    z-index: 20;
+    top: 635px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 550px;
-    margin: 20px auto 0 auto;
+    margin: 0;
     text-align: center;
     font-size: 15px;
     font-family: "Aboreto", serif;
