@@ -46,7 +46,13 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 550px;
-    background: #410001
+    background: linear-gradient(
+        to bottom,
+        #190000,
+        #700000,
+        #410001,
+        #190000
+    );
     clip-path: polygon(
         50% 0,
         100% 10%,
@@ -56,7 +62,7 @@ body {
     );
 }
 
-/* BLOOD DRIPS AT VERY BOTTOM */
+/* BLOOD DRIPS */
 .drip {
     position: absolute;
     z-index: 30;
@@ -66,7 +72,6 @@ body {
     box-shadow: none;
 }
 
-/* DRIP POSITIONS */
 .drip.one {
     left: 12%;
     width: 16px;
@@ -141,11 +146,13 @@ body {
 
 /* IMAGE */
 .andyscode-image {
-    position: relative;
+    position: absolute;
     z-index: 10;
+    top: -300px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 479px;
     height: 700px;
-    margin: -500px auto 0;
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
     background-position: center;
@@ -167,7 +174,7 @@ body {
     width: 550px;
     min-height: 500px;
     margin: 0 auto;
-    margin-top: -200px;
+    margin-top: 0;
     padding: 30px;
     text-align: justify;
     background: transparent;
@@ -177,16 +184,15 @@ body {
 .andyscode-body {
     position: relative;
     z-index: 5;
-    top: -100px;
+    top: 0;
     width: 500px;
     margin: 0 auto;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     text-align: justify;
     color: white;
     font-size: 13px;
     font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
-    font-style: normal;
     line-height: 1.6;
     background: #0d0712;
     overflow-x: hidden;
@@ -214,12 +220,10 @@ body {
     pointer-events: none;
 }
 
-
 .andyscode-speech {
     display: block;
     color: #d40808;
     font-size: 14px;
-    font-style: bold;
     font-family: "MedievalSharp", cursive;
     font-weight: 400;
     font-style: normal;
@@ -241,7 +245,6 @@ body {
     letter-spacing: 4px;
     font-family: "UnifrakturMaguntia", cursive;
     font-weight: 400;
-    font-style: normal;
     line-height: 1;
     background: linear-gradient(
         to right,
@@ -257,7 +260,7 @@ body {
     color: transparent;
 }
 
-/* QUOTE UNDER TITLE */
+/* QUOTE */
 .andyscode-quote {
     position: absolute;
     z-index: 20;
