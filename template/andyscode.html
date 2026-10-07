@@ -11,7 +11,7 @@
 <!-- GOOGLE FONTS -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Didact+Gothic&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Didact+Gothic&family=MedievalSharp&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -66,12 +66,9 @@ body {
     width: 550px;
     background: linear-gradient(
         180deg,
-        #190000,
-        #700000,
-        #190000
+        ##0b2838,
+        #410001
     );
-    background-size: 100% 200%;
-    animation: gradientMove 8s ease infinite;
     clip-path: polygon(
         50% 0,
         100% 10%,
@@ -79,20 +76,6 @@ body {
         0 100%,
         0 10%
     );
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 50% 0%;
-    }
-
-    50% {
-        background-position: 50% 100%;
-    }
-
-    100% {
-        background-position: 50% 0%;
-    }
 }
 
 /* BLOOD DRIPS AT VERY BOTTOM */
@@ -208,7 +191,7 @@ body {
     position: relative;
     z-index: 5;
     width: 550px;
-    min-height: 450px;
+    min-height: 500px;
     margin: 0 auto;
     margin-top: -200px;
     padding: 30px;
@@ -263,6 +246,9 @@ body {
     color: #d40808;
     font-size: 14px;
     font-style: bold;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
     text-align: justify;
     text-shadow: 0 0 5px #600000;
 }
@@ -349,16 +335,18 @@ body {
     <div class="andyscode-text">
         <div class="andyscode-body">
             Lorem ipsum dolor sit amet consectetur adipiscing elit. Sunt ad et et id magna nobis aute et exercitation tempor animi. Praesentium sunt tempore temporibus omnis molestias atque animi reprehenderit animi temporibus ut est. In deserunt assumenda quo dolore in in culpa.
-<br>
-Nihil imperdiet omnis sed reprehenderit ea qui ducimus. Cupiditate enim cumque laborum dolor ipsum anim atque temporibus accusamus. Quos eu maxime quo quod dolores corrupti officia libero elit. Tempore aut harum facere nobis eos id velit laborum.
-        <div class="andyscode-speech">
+<p>
+Nihil imperdiet omnis sed reprehenderit ea qui ducimus. Cupiditate enim cumque laborum dolor ipsum anim atque temporibus accusamus. Quos eu maxime quo quod dolores corrupti officia libero elit. Tempore aut harum facere nobis eos id velit laborum. <div class="andyscode-speech">
 "This is how you talk, either like it or don't idgaf lol"
-    </div>
+</div>
 Deserunt at assumenda et voluptas dolor eligendi. Id irure eiusmod enim occaecat sint fugiat. Sint assumenda labore cupidatat voluptatum ullamco eum optio odio. Non at sed quibusdam est illum dolor quidem aliqua ad dolores aliquip.
-<br>
+<p>
 Molestias labore nulla fugiat est sint duis nostrud. Temporibus autem et irure aute cum in id reprehenderit occaecat. Ad libero minim et vero sunt quod laborum.
-<br>
+<p>
 Iusto magna pariatur maxime mollitia dolor laborum ex quos anim. Ut eligendi veniam id id animi cupidatat reprehenderit aute ipsum minus. Possimus eu temporibus voluptatum nihil et cillum commodo temporibus dolore ullamco. Minim sint laboris incididunt est et sunt dolor expedita aut voluptas et.
+<div class="andyscode-speech">
+"Preach bitch!"
+</div>
         </div>
     </div>
 
