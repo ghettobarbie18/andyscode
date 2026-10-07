@@ -230,6 +230,9 @@ body {
     color: #d40808;
     font-size: 14px;
     font-style: bold;
+    font-family: "MedievalSharp", cursive;
+    font-weight: 400;
+    font-style: normal;
     text-align: justify;
     text-shadow: 0 0 5px #600000;
 }
