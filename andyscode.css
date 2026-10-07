@@ -50,12 +50,9 @@ body {
     width: 550px;
     background: linear-gradient(
         180deg,
-        #190000,
-        #700000,
-        #190000
+        ##0b2838,
+        #410001
     );
-    background-size: 100% 200%;
-    animation: gradientMove 8s ease infinite;
     clip-path: polygon(
         50% 0,
         100% 10%,
@@ -63,20 +60,6 @@ body {
         0 100%,
         0 10%
     );
-}
-
-@keyframes gradientMove {
-    0% {
-        background-position: 50% 0%;
-    }
-
-    50% {
-        background-position: 50% 100%;
-    }
-
-    100% {
-        background-position: 50% 0%;
-    }
 }
 
 /* BLOOD DRIPS AT VERY BOTTOM */
@@ -192,7 +175,7 @@ body {
     position: relative;
     z-index: 5;
     width: 550px;
-    min-height: 450px;
+    min-height: 500px;
     margin: 0 auto;
     margin-top: -200px;
     padding: 30px;
