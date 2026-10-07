@@ -17,8 +17,7 @@ body {
 .andyscode-content {
     position: relative;
     width: 700px;
-    margin: 40px auto;
-    top: 200px;
+    margin: 240px auto 100px;
     padding-bottom: 60px;
     animation: pulse 3s infinite;
 }
@@ -160,6 +159,7 @@ body {
         drop-shadow(0 0 30px rgba(255,0,0,.7));
 }
 
+/* TEXT */
 .andyscode-text {
     position: relative;
     z-index: 5;
@@ -172,11 +172,13 @@ body {
     background: transparent;
 }
 
+/* BODY */
 .andyscode-body {
     position: relative;
     z-index: 5;
-    top: -100px;
     width: 500px;
+    min-height: 300px;
+    max-height: 400px;
     margin: 0 auto;
     padding: 10px;
     text-align: justify;
@@ -212,6 +214,7 @@ body {
     pointer-events: none;
 }
 
+/* SPEECH */
 .andyscode-speech {
     display: block;
     color: #d40808;
