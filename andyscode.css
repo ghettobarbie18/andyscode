@@ -54,7 +54,7 @@ body {
     position: absolute;
     z-index: 30;
     top: calc(100% - 60px);
-    background: linear-gradient(to bottom, #a30000, #4d0000);
+    background: linear-gradient(to bottom, #120000, #4d0000);
     border-radius: 0 0 50% 50%;
     box-shadow: none;
 }
