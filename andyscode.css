@@ -62,7 +62,8 @@ body {
 .drip {
     position: absolute;
     z-index: 30;
-    top: calc(100% - 60px);
+    bottom: 60px;
+    transform: translateY(0);
     background: linear-gradient(to bottom, #410001, #f10000);
     border-radius: 0 0 50% 50%;
     box-shadow: none;
@@ -180,7 +181,8 @@ body {
     position: relative;
     z-index: 5;
     width: 500px;
-    height: 500px;
+    min-height: 300px;
+    max-height: 400px;
     margin: 0 auto;
     padding: 10px;
     text-align: justify;
@@ -188,32 +190,19 @@ body {
     font-size: 13px;
     font-family: "Didact Gothic", sans-serif;
     font-weight: 400;
-    font-style: normal;
     line-height: 1.6;
     background: #0d0712;
     overflow-x: hidden;
     overflow-y: auto;
-}
-
-.andyscode-body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    padding: 2px;
-    background: linear-gradient(
+    border: 2px solid transparent;
+    border-image: linear-gradient(
         135deg,
         #ff0000,
         #bc2b31,
         #7c2f3e,
         #402740,
         #01153e
-    );
-    -webkit-mask:
-        linear-gradient(#fff 0 0) content-box,
-        linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    pointer-events: none;
+    ) 1;
 }
 
 /* SPEECH */
