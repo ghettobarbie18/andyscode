@@ -145,6 +145,7 @@ body {
     z-index: 10;
     width: 400px;
     height: 585px;
+    margin: auto;
     top: -200px;
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
