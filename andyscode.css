@@ -58,7 +58,7 @@ body {
 }
 
 /* BLOOD DRIPS */
-.drips {
+.drip {
     position: absolute;
     z-index: 30;
     top: 840px;
