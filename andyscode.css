@@ -180,7 +180,7 @@ body {
     position: relative;
     z-index: 5;
     width: 500px;
-    min-height: 500px;
+    min-height: 300px;
     max-height: 500px;
     margin: 0 auto;
     padding: 10px;
@@ -251,7 +251,7 @@ body {
     position: absolute;
     z-index: 20;
     top: 390px;
-    left: 50%;
+    left: 50px;
     transform: translateX(-50%);
     width: 500px;
     margin: 0;
