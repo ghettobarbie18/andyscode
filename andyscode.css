@@ -260,7 +260,7 @@ body {
 .andyscode-quote {
     position: absolute;
     z-index: 20;
-    top: 380px;
+    top: 360px;
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
@@ -276,11 +276,11 @@ body {
     line-height: 1.2;
     background: linear-gradient(
         to left,
-        #731515,
-        #de4e35,
-        #642c27,
-        #f6d3a2,
-        #3a1d1c
+        #a68a6e,
+        #b69c7e,
+        #c7ae8e,
+        #d7c09,
+        #e8d3af
     );
     -webkit-background-clip: text;
     background-clip: text;
