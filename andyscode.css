@@ -20,7 +20,7 @@ body {
     height: 900px;
     margin: 240px auto 160px;
     padding: 0;
-    animation: pulse 3s infinite
+    animation: pulse 3s infinite;
 }
 
 @keyframes pulse {
