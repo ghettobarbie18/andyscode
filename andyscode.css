@@ -17,8 +17,9 @@ body {
 .andyscode-content {
     position: relative;
     width: 700px;
-    margin: 240px auto 100px;
-    padding-bottom: 60px;
+    height: 500px;
+    margin: auto;
+    padding-bottom: 100px;
     animation: pulse 3s infinite;
 }
 
@@ -142,9 +143,9 @@ body {
 .andyscode-image {
     position: relative;
     z-index: 10;
-    width: 479px;
-    height: 700px;
-    margin: -450px auto 0;
+    width: 400px;
+    height: 585px;
+    top: -200px;
     background-image: url("https://raw.githubusercontent.com/ghettobarbie18/andyscode/refs/heads/main/Andy_hot_gal.webp");
     background-size: cover;
     background-position: center;
@@ -164,7 +165,7 @@ body {
     position: relative;
     z-index: 5;
     width: 550px;
-    min-height: 500px;
+    height: 500px;
     margin: 0 auto;
     margin-top: -200px;
     padding: 30px;
@@ -177,8 +178,7 @@ body {
     position: relative;
     z-index: 5;
     width: 500px;
-    min-height: 300px;
-    max-height: 400px;
+    height: 500px;
     margin: 0 auto;
     padding: 10px;
     text-align: justify;
