@@ -261,7 +261,7 @@ body {
 .andyscode-quote {
     position: absolute;
     z-index: 20;
-    top: 380px;
+    top: 360px;
     left: 50%;
     transform: translateX(-50%);
     width: 500px;
