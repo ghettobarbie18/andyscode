@@ -58,7 +58,7 @@ body {
 }
 
 /* BLOOD DRIPS */
-.andyscode-drips {
+.drips {
     position: absolute;
     z-index: 30;
     top: 840px;
